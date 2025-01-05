@@ -1,0 +1,32 @@
+
+
+To make a basic python app/website:
+
+run 
+```bash
+python -m venv venv
+source venv\Scripts\activate
+```
+then 
+
+```bash
+pip install flask
+```
+
+RUN:
+
+```bash 
+run python app.py
+```
+
+ROUTES:
+
+Inside app.py
+
+HTML:
+
+Inside templates
+
+CSS:
+
+Inside static

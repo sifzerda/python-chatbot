@@ -2,6 +2,19 @@
 <html>
 <head>
     <title>Contact</title>
+    <style>
+        .messages {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+        .message {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
     <h1>Contact Us</h1>
@@ -23,6 +36,17 @@
         <br>
         <button type="submit">Send</button>
     </form>
+
+    <div class="messages">
+        <h2>Previous Messages</h2>
+        {% for msg in messages %}
+            <div class="message">
+                <strong>{{ msg.name }}</strong> says:<br>
+                <p>{{ msg.message }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
     <p><a href="/">Home</a> | <a href="/about">About</a></p>
 </body>
 </html>

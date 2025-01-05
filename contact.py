@@ -16,7 +16,9 @@ class Message(db.Model):
 # Routes for the Contact Blueprint
 @contact_bp.route("/contact")
 def contact():
-    return render_template("contact.html")
+    # Retrieve all messages from the database, ordered by the most recent first
+    messages = Message.query.order_by(Message.id.desc()).all()
+    return render_template("contact.html", messages=messages)
 
 @contact_bp.route("/contact/submit", methods=["POST"])
 def submit():

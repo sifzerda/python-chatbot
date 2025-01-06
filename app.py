@@ -22,6 +22,10 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route("/bot")
+def bot():
+    return render_template("bot.html")
+
 # Run the application
 if __name__ == "__main__":
     with app.app_context():

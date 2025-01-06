@@ -46,7 +46,7 @@ Inside /static
 
 ## CREATE REUSABLE TEMPLATES
 
-Paste this inside 
+Paste this inside the child page 
 
 ```bash
 {% extends 'base.html' %}

@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact</title>
-    <style>
-        .messages {
-            margin-top: 20px;
-            padding: 10px;
-            border-top: 1px solid #ccc;
-        }
-        .message {
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            background-color: #f9f9f9;
-        }
-    </style>
-</head>
-<body>
-    <h1>Contact Us</h1>
+{% extends 'base.html' %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+    <h2>Contact Me</h2>
+    <!-- Message ------------------------------------------------------>
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
             <ul>
@@ -46,7 +31,11 @@
             </div>
         {% endfor %}
     </div>
+    <!-- End Message ---------------------------------------------->
+{% endblock %}
 
-    <p><a href="/">Home</a> | <a href="/about">About</a></p>
-</body>
-</html>
+
+
+
+
+

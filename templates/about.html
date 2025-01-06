@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="/static/styles.css">
-</head>
-<body>
-    <h1>About Page</h1>
-    <p>This page describes the project.</p>
-    <a href="/">Back to Home</a>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+    <h2>About My App</h2>
+    <p>This is the about page.</p>
+{% endblock %}

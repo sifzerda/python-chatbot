@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% block title %}Bot{% endblock %}
 {% block content %}
-    <h2>This is the Bot page</h2>
-    <p>This is the Bot page.</p>
+    <div class="chatbot-container">
+        <h2>Chat with the Bot</h2>
+        <div id="chat-window">
+            <div id="chat-messages"></div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" />
+            <button type="submit">Send</button>
+        </form>
+    </div>
 {% endblock %}

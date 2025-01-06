@@ -6,6 +6,14 @@ This is a simple Flask app with the following features:
 - SQLite database integration for storing contact messages.
 - Flash messages for user feedback.
 
+## TECH:
+
++ Python
++ Flask
++ SQLAlchemy
++ HTML
++ CSS stylesheets
+
 ## How to Run
 
 1. Install dependencies:
@@ -56,4 +64,4 @@ Paste this inside the child page
     <p>This is the about page.</p>
 {% endblock %}
 ```
-
+Replace <h2> --> </p> with your page content

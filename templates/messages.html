@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Messages</title>
-</head>
-<body>
-    <h1>Submitted Messages</h1>
-    <ul>
-        {% for msg in messages %}
-        <li><strong>{{ msg.name }}:</strong> {{ msg.message }}</li>
-        {% endfor %}
-    </ul>
-    <p><a href="/">Home</a></p>
-</body>
-</html>
+
+{% extends 'base.html' %}
+{% block title %}About{% endblock %}
+{% block content %}
+
+<h1>Submitted Messages</h1>
+<ul>
+    {% for msg in messages %}
+    <li><strong>{{ msg.name }}:</strong> {{ msg.message }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

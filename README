@@ -32,17 +32,21 @@ run python app.py
 
 ROUTES:
 
-Inside app.py
+Set up Inside app.py
 
 HTML:
 
-Inside templates
+Inside templates:
+(1) Basic template inside base.html
+(2) Main page: index.html
 
 CSS:
 
-Inside static
+Inside /static
 
 ## CREATE REUSABLE TEMPLATES
+
+Paste this inside 
 
 ```bash
 {% extends 'base.html' %}

@@ -22,9 +22,9 @@ def home():
 def about():
     return render_template("about.html")
 
-@app.route("/bot")
+@app.route("/chatbot")
 def bot():
-    return render_template("bot.html")
+    return render_template("chatbot.html")
 
 # Run the application
 if __name__ == "__main__":
